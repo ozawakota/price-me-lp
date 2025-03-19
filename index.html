@@ -10,45 +10,428 @@
    margin: 0;
   }
   div {
-  margin: 0 auto;
-  margin-top: -5rem;
-  text-align: center;
-}
-a {
-  display: inline-bslock;
-}
-img {
-  max-width: 500px;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-}
-@media screen and (min-width: 750px) {
-  .for_sp {
-    display: none;
+   margin: 0 auto;
+   text-align: center;
   }
-}
-@media screen and (max-width: 749px) {
-  .for_pc {
-    display: none;
+  h2 {
+   margin: 0;
+  }
+  a {
+    display: inline-bslock;
+    &:hover {
+      opacity: .8;
+     }
   }
   img {
-    width: 100%;
+    max-width: 500px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
-}
-.fv {
- background-color: #f2e8d5;
-}
+  @media screen and (min-width: 750px) {
+    .for_sp {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 749px) {
+    .for_pc {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+	.sec {
+		overflow-x: hidden;
+
+	}
+	.inner {
+		/* padding-inline: 15px; */
+
+	}
+  .fv {
+   background-color: #f2e8d5;
+  }
+  .fv-btn {
+   padding-block: 14px 27px;
+  }
+  .btn {
+   background-color: #f5f3ed;
+	 padding-inline: 15px;
+  }
+  .sec {
+   background-color: #f7f0de;
+   &.media {
+    padding-block: 80px 110px;
+   }
+  }
+  .border-top {
+   border-top: 10px solid #857025;
+   padding-block: 65px 78px;
+  }
+  .cta {
+   margin-bottom: 20px;
+  }
+	.point {
+		padding-bottom: 110px;
+		position: relative;
+		background-color: white;
+		&::after {
+			content: "";
+			display: block;
+			width: 110%;
+			height: auto;
+			aspect-ratio: 1244/616;
+			background: url(./img/sec02/sec02_bg.png) no-repeat top center / cover;
+			position: absolute;
+			bottom: 13.5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		h2 {
+			background-color: #e6dfcf;
+			padding-block: 47px 26px;
+		}
+		.body {
+			margin-top: 60px;
+			position: relative;
+			z-index: 1;
+			img {
+				+ img {
+					margin-top: 55px;
+				}
+			}
+		}
+	}
+	.favorite {
+		padding-bottom: 95px;
+		h2 {
+			background-color: #e6dfcf;
+			padding-block: 10px;
+			position: relative;
+			img {
+				position: relative;
+				z-index: 1;
+			}
+			&::after{
+				content: "";
+				display: block;
+				width: 110%;
+				height: 300px;
+				background: url(./img/sec03/sec03_bg.png) no-repeat top center / cover;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+		}
+		.body {
+			position: relative;
+			margin-top: -120px;
+			img {
+				+ img {
+					margin-top: 35px;
+				}
+			}
+
+		}
+
+	}
+	.about {
+		padding-block: 70px 0px;
+
+		h2,.headline {
+			background-color: #e6dfcf;
+
+		}
+		h2 {
+		}
+		.headline {
+			padding-bottom: 70px;
+		}
+		.body {
+			background-color: white;
+			padding-top: 75px;
+			padding-bottom: 75px;
+			img {
+				+ img {
+					margin-top: 80px;
+				}
+			}
+
+		}
+	}
+
+	.care {
+		padding-block: 70px 120px;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			width: 110%;
+			height: auto;
+			aspect-ratio: 1244/616;
+			background: url(./img/sec05/sec05_bg.png) no-repeat top center / cover;
+			position: absolute;
+			bottom: 13.5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		h2 {
+			margin-bottom: 60px;
+		}
+		.body {
+			position: relative;
+			z-index: 1;
+			img {
+				+ img {
+					margin-top: 60px;
+				}
+			}
+
+		}
+	}
+
+	.voice {
+		background-color: #e6dfcf;
+		padding-bottom: 120px;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			width: 568px;
+			height: 581px;
+			background: url(./img/sec06/sec06_bg.png) no-repeat top center / cover;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+		}
+		h2 {
+			background-color: #750000;
+			padding-block: 30px 20px;
+		}
+		.body {
+			margin-top: 45px;
+			position: relative;
+			z-index: 1;
+			img {
+				+ img {
+					margin-top: 45px;
+				}
+			}
+
+		}
+	}
+
+	.faq {
+		background-color: #fff;
+		padding-block: 90px 150px;
+		.body {
+			img {
+				+ img {
+					margin-top: 30px;
+				}
+			}
+
+		}
+	}
+
  </style>
 </head>
 <body>
- <div class="fv">
-   <div class="inner">
-    <img src="./img/fv.png" alt="">
-   </div>
- </div>
- <section>
-  a
+	<div class="fv">
+		<div class="inner">
+			<img src="./img/fv.png" alt="">
+		</div>
+	</div>
+	<div class="btn fv-btn">
+		<div class="inner">
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<section class="sec media">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec01/sec01_h2.png" alt="">
+			</h2>
+			<div class="body">
+				<img src="./img/sec01/sec01_01.png" alt="">
+				<img src="./img/sec01/sec01_02.png" alt="">
+			</div>
+  </div>
  </section>
+ <!-- CTA & BTN -->
+ <div class="btn border-top">
+  <div class="inner">
+   <div class="cta">
+    <img src="./img/cta.png" alt="">
+   </div>
+   <a href="">
+    <img src="./img/btn.png" alt="">
+   </a>
+  </div>
+ </div>
+ <section class="sec point">
+	<div class="inner">
+		<h2>
+			<img src="./img/sec02/sec02_h2.png" alt="">
+		</h2>
+		<div class="headline-bg">
+			<img src="./img/sec02/sec02_h2_bg.png.png" alt="">
+		</div>
+		<div class="body">
+			<img src="./img/sec02/sec02_01.png" alt="">
+			<img src="./img/sec02/sec02_02.png" alt="">
+			<img src="./img/sec02/sec02_03.png" alt="">
+		</div>
+	</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+				<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- 人気メニュー -->
+	<section class="sec favorite">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec03/sec03_h2.png" alt="">
+			</h2>
+			<div class="body">
+				<img src="./img/sec03/sec03_01.png" alt="">
+				<img src="./img/sec03/sec03_02.png" alt="">
+				<img src="./img/sec03/sec03_03.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+				<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- Spice me とは？ -->
+	<section class="sec about">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec04/sec04_h2.png" alt="">
+			</h2>
+			<div class="headline">
+				<img src="./img/sec04/sec04_01.png" alt="">
+			</div>
+			<div class="body">
+				<img src="./img/sec04/sec04_02.png" alt="">
+				<img src="./img/sec04/sec04_03.png" alt="">
+				<img src="./img/sec04/sec04_04.png" alt="">
+				<img src="./img/sec04/sec04_05.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+				<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- スパイスへのこだわり -->
+	<section class="sec care">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec05/sec05_h2.png" alt="">
+			</h2>
+			<div class="body">
+				<img src="./img/sec05/sec05_01.png" alt="">
+				<img src="./img/sec05/sec05_02.png" alt="">
+				<img src="./img/sec05/sec05_03.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+				<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- お客様の声 -->
+	<section class="sec voice">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec06/sec06_h2.png" alt="">
+			</h2>
+			<div class="headline-bg">
+				<img src="./img/sec06/sec06_h2_bg.png" alt="">
+			</div>
+			<div class="body">
+				<img src="./img/sec06/sec06_01.png" alt="">
+				<img src="./img/sec06/sec06_02.png" alt="">
+				<img src="./img/sec06/sec06_03.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+				<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+				<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- よくある質問 -->
+	<section class="sec faq">
+		<div class="inner">
+			<h2>
+				<img src="./img/sec07/sec07_h2.png" alt="">
+			</h2>
+			<div class="body">
+				<img src="./img/sec07/sec07_01.png" alt="">
+				<img src="./img/sec07/sec07_02.png" alt="">
+				<img src="./img/sec07/sec07_03.png" alt="">
+				<img src="./img/sec07/sec07_04.png" alt="">
+				<img src="./img/sec07/sec07_05.png" alt="">
+				<img src="./img/sec07/sec07_06.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- CTA & BTN -->
+	<div class="btn border-top">
+		<div class="inner">
+			<div class="cta">
+			<img src="./img/cta.png" alt="">
+			</div>
+			<a href="">
+			<img src="./img/btn.png" alt="">
+			</a>
+		</div>
+	</div>
+
 </body>
 </html>
